@@ -7,6 +7,7 @@
     **前端**
     同时也要支持前端请求
 ## 使用说明
+```xml
   <plugin>
       <groupId>com.kxtx</groupId>
       <artifactId>mock-plugin-maven</artifactId>
@@ -16,7 +17,9 @@
           <configFile>${build.testSourceDirectory}\mock\config.json</configFile>
       </configuration>
   </plugin>
-  服务提供方：
+```
+服务提供方：
+```html
   [{
     "request": {
       "uri": "/hello"
@@ -39,9 +42,11 @@
       }
     }
     }]
-	esb服务提供方：
+```
+esb服务提供方：
 	1.修改dev.properties的esb url为本机端口
 	2.修改config.json文件,如：
+```html
 	[{
 		"request" : {
 			"uri" : "/esb",
@@ -71,3 +76,4 @@
 	}
 	}
 	]
+```
