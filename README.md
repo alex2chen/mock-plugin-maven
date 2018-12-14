@@ -2,10 +2,10 @@
     为后续集成化测试测试准备，先搭建mock服务器，在集成化单元测试中，开发联调经常需要一个轻量级的maven mock server plugin
 
 ## 需求
-    **esb**
-    系统间解耦，能够代理esb请求,进行模拟返回
-    **前端**
-    同时也要支持前端请求
+-  系统间解耦，能够代理依赖系统（esb、eureka）请求,进行模拟返回；
+-  前后端联调需要，解决由于前置条件不到位（刚定义的接口契约要马上就可以访问）导致开发资源互相等等；
+-  集成化测试需要，解决无法清理依赖系统资源
+   
 ## 使用说明
 ```xml
   <plugin>
@@ -17,6 +17,11 @@
           <configFile>${build.testSourceDirectory}\mock\config.json</configFile>
       </configuration>
   </plugin>
+```
+```html
+命令有：
+mock:help
+mock:run
 ```
 服务提供方：
 ```html
@@ -44,8 +49,8 @@
     }]
 ```
 esb服务提供方：
-	1.修改dev.properties的esb url为本机端口
-	2.修改config.json文件,如：
+-	1.修改dev.properties的esb url为本机端口
+-	2.修改config.json文件,如：
 ```html
 	[{
 		"request" : {
