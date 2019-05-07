@@ -12,7 +12,7 @@
 ## 使用说明
 ```xml
   <plugin>
-      <groupId>com.kxtx</groupId>
+      <groupId>com.github.middleware</groupId>
       <artifactId>mock-plugin-maven</artifactId>
       <version>1.0-SNAPSHOT</version>
       <configuration>

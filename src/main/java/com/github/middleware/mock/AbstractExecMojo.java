@@ -1,4 +1,4 @@
-package com.kxtx.mock;
+package com.github.middleware.mock;
 
 import com.google.common.base.Strings;
 import org.apache.maven.plugin.AbstractMojo;

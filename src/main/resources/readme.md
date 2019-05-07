@@ -8,7 +8,7 @@
     同时也要支持前端请求
 ## 使用说明
   <plugin>
-      <groupId>com.kxtx</groupId>
+      <groupId>com.github.middleware</groupId>
       <artifactId>mock-plugin-maven</artifactId>
       <version>1.0-SNAPSHOT</version>
       <configuration>

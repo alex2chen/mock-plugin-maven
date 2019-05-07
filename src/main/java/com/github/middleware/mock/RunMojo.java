@@ -1,18 +1,14 @@
-package com.kxtx.mock;
+package com.github.middleware.mock;
 
 
 import com.github.dreamhead.moco.HttpServer;
 import com.github.dreamhead.moco.Moco;
 import com.github.dreamhead.moco.MocoJsonRunner;
 import com.github.dreamhead.moco.Runner;
-import org.apache.maven.plugin.AbstractMojo;
 import org.apache.maven.plugin.MojoExecutionException;
 import org.apache.maven.plugin.MojoFailureException;
-import org.apache.maven.plugins.annotations.LifecyclePhase;
 import org.apache.maven.plugins.annotations.Mojo;
 import org.apache.maven.plugins.annotations.Parameter;
-
-import java.io.File;
 
 /**
  * 运行插件
